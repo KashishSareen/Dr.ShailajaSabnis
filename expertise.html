@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Areas of Expertise | Dr. Shailaja Sabnis</title>
+    <meta name="description" content="Explore the rheumatology, autoimmune and internal medicine conditions treated by Dr. Shailaja Sabnis in Mumbai." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@0,9..144,400;0,9..144,600&family=Karla:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ivory: "#FAF7F1",
+              parchment: "#F1E9DB",
+              sage: { DEFAULT: "#6F8D76", deep: "#3F5744", pale: "#DCE6DD" },
+              mauve: { DEFAULT: "#B08497", pale: "#EFDFE4" },
+              ink: { DEFAULT: "#26302A", soft: "#5B6259" },
+              line: "#DDD2BE"
+            },
+            fontFamily: { display: ["Fraunces", "serif"], body: ["Karla", "sans-serif"], mono: ["IBM Plex Mono", "monospace"] }
+          }
+        }
+      };
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      body { font-family: "Karla", sans-serif; background: radial-gradient(circle at 10% 0%, rgba(111,141,118,.12), transparent 32%), radial-gradient(circle at 95% 80%, rgba(176,132,151,.11), transparent 30%), #faf7f1; color: #26302a; }
+      .nav-link { position: relative; }
+      .nav-link::after { content: ""; position: absolute; left: 0; bottom: -3px; width: 0; height: 2px; background: #b08497; transition: width .25s ease; }
+      .nav-link:hover::after, .nav-link[aria-current="page"]::after { width: 100%; }
+      .gradient-button { background: linear-gradient(135deg, #3f5744, #6f8d76 48%, #b08497); box-shadow: 0 16px 35px rgba(63,87,68,.18); }
+      .expertise-card { background: linear-gradient(135deg, rgba(255,255,255,.95), rgba(234,241,236,.9) 48%, rgba(246,238,242,.88)); border: 1px solid rgba(63,87,68,.1); box-shadow: 0 18px 40px -26px rgba(38,48,42,.35); transition: transform .3s ease, box-shadow .3s ease; }
+      .expertise-card:hover { transform: translateY(-7px); box-shadow: 0 24px 45px -24px rgba(63,87,68,.42); }
+      @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+    </style>
+  </head>
+  <body>
+    <header class="sticky top-0 z-50 border-b border-line bg-ivory/90 backdrop-blur-md">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-1 sm:px-6 md:px-8 md:py-2">
+        <a href="index.html#home" class="shrink-0"><img src="https://ik.imagekit.io/iuiy6mihw/Dr.sabnisLogo.png" alt="Dr. Shailaja Sabnis MD" class="block h-20 w-auto max-w-[240px] object-contain sm:h-24 md:h-20" /></a>
+        <div class="hidden items-center gap-8 text-base font-semibold text-ink-soft md:flex lg:gap-10">
+          <a class="nav-link hover:text-sage-deep" href="index.html#home">Home</a>
+          <a class="nav-link hover:text-sage-deep" href="index.html#about">About</a>
+          <a class="nav-link hover:text-sage-deep" href="expertise.html" aria-current="page">Expertise</a>
+          <a class="nav-link hover:text-sage-deep" href="index.html#contact">Contact</a>
+        </div>
+        <a class="gradient-button hidden rounded-full px-7 py-3 text-base font-semibold text-white md:inline-flex" href="https://wa.me/919833666967?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener">Book a Consultation</a>
+        <button id="mobile-menu-btn" type="button" class="flex h-11 w-11 flex-col items-center justify-center rounded-lg text-sage-deep md:hidden" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="h-0.5 w-6 bg-sage-deep"></span><span class="my-1.5 h-0.5 w-6 bg-sage-deep"></span><span class="h-0.5 w-6 bg-sage-deep"></span>
+        </button>
+      </nav>
+      <div id="mobile-menu" class="hidden border-t border-line bg-ivory px-6 py-5 md:hidden">
+        <div class="flex flex-col gap-3 text-lg font-semibold text-ink-soft">
+          <a class="py-1 hover:text-sage-deep" href="index.html#home">Home</a>
+          <a class="py-1 hover:text-sage-deep" href="index.html#about">About</a>
+          <a class="py-1 text-sage-deep" href="expertise.html">Expertise</a>
+          <a class="py-1 hover:text-sage-deep" href="index.html#contact">Contact</a>
+          <a class="gradient-button mt-2 rounded-full px-6 py-3 text-center text-base text-white" href="https://wa.me/919833666967?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener">Book a Consultation</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="px-5 pb-16 pt-20 sm:px-8 sm:pb-24 sm:pt-28">
+        <div class="mx-auto max-w-6xl">
+          <div class="max-w-2xl">
+            <p class="mb-5 flex items-center gap-3 font-mono text-xs font-medium uppercase tracking-[.2em] text-sage-deep"><span class="h-px w-8 bg-sage-deep/40"></span>Areas of Expertise</p>
+            <h1 class="font-display text-4xl leading-tight text-sage-deep sm:text-5xl md:text-6xl">Conditions treated, <span class="italic text-mauve">start to finish.</span></h1>
+            <p class="mt-6 max-w-xl text-base leading-relaxed text-ink-soft sm:text-lg">From first diagnosis to long-term disease management, Dr. Sabnis offers thoughtful care across rheumatic, autoimmune and internal medicine conditions.</p>
+          </div>
+
+          <div class="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="expertise-card rounded-2xl p-7"><div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-sage-deep/10 text-2xl text-sage-deep">01</div><h2 class="font-display text-2xl text-sage-deep">Rheumatoid Arthritis</h2><p class="mt-3 leading-relaxed text-ink-soft">Early diagnosis and personalized, treat-to-target disease modifying strategies.</p></article>
+            <article class="expertise-card rounded-2xl p-7"><div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-mauve/15 text-2xl text-mauve">02</div><h2 class="font-display text-2xl text-sage-deep">SLE (Lupus)</h2><p class="mt-3 leading-relaxed text-ink-soft">Comprehensive care for systemic lupus erythematosus, including flare management.</p></article>
+            <article class="expertise-card rounded-2xl p-7"><div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-sage-deep/10 text-2xl text-sage-deep">03</div><h2 class="font-display text-2xl text-sage-deep">Ankylosing Spondylitis</h2><p class="mt-3 leading-relaxed text-ink-soft">Targeted therapy for spinal inflammation, stiffness and seronegative spondyloarthropathy.</p></article>
+            <article class="expertise-card rounded-2xl p-7"><div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-mauve/15 text-2xl text-mauve">04</div><h2 class="font-display text-2xl text-sage-deep">Osteoarthritis</h2><p class="mt-3 leading-relaxed text-ink-soft">Medical management of joint wear, pain and mobility loss.</p></article>
+            <article class="expertise-card rounded-2xl p-7"><div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-sage-deep/10 text-2xl text-sage-deep">05</div><h2 class="font-display text-2xl text-sage-deep">Osteoporosis &amp; Bone Health</h2><p class="mt-3 leading-relaxed text-ink-soft">Screening and treatment of metabolic bone and joint disease.</p></article>
+            <article class="expertise-card rounded-2xl p-7"><div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-mauve/15 text-2xl text-mauve">06</div><h2 class="font-display text-2xl text-sage-deep">Gout &amp; Hyperuricemia</h2><p class="mt-3 leading-relaxed text-ink-soft">Acute care and long-term uric acid management.</p></article>
+            <article class="expertise-card rounded-2xl p-7"><div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-sage-deep/10 text-2xl text-sage-deep">07</div><h2 class="font-display text-2xl text-sage-deep">Psoriatic Arthritis</h2><p class="mt-3 leading-relaxed text-ink-soft">Joint and skin co-management, often alongside dermatology.</p></article>
+            <article class="expertise-card rounded-2xl p-7"><div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-mauve/15 text-2xl text-mauve">08</div><h2 class="font-display text-2xl text-sage-deep">Vasculitis &amp; APLA</h2><p class="mt-3 leading-relaxed text-ink-soft">Care for vasculitis, antiphospholipid antibody syndrome and clotting disorders.</p></article>
+            <article class="expertise-card rounded-2xl p-7"><div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-sage-deep/10 text-2xl text-sage-deep">09</div><h2 class="font-display text-2xl text-sage-deep">Pregnancy &amp; Rheumatic Disease</h2><p class="mt-3 leading-relaxed text-ink-soft">Pre-conception counselling and safety planning for women on rheumatology treatment.</p></article>
+            <article class="expertise-card rounded-2xl p-7"><div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-mauve/15 text-2xl text-mauve">10</div><h2 class="font-display text-2xl text-sage-deep">Recurrent Pregnancy Loss</h2><p class="mt-3 leading-relaxed text-ink-soft">Autoimmune work-up for recurrent miscarriage.</p></article>
+            <article class="expertise-card rounded-2xl p-7"><div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-sage-deep/10 text-2xl text-sage-deep">11</div><h2 class="font-display text-2xl text-sage-deep">Thyroid Disorders</h2><p class="mt-3 leading-relaxed text-ink-soft">Diagnosis and regulation of thyroid imbalance.</p></article>
+            <article class="expertise-card rounded-2xl p-7"><div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-mauve/15 text-2xl text-mauve">12</div><h2 class="font-display text-2xl text-sage-deep">General Internal Medicine</h2><p class="mt-3 leading-relaxed text-ink-soft">Diabetes, hypertension, fever and infection management.</p></article>
+          </div>
+
+          <div class="mt-14 flex flex-col items-start justify-between gap-6 rounded-2xl border border-sage-deep/15 bg-sage-deep/5 p-7 sm:flex-row sm:items-center sm:p-9"><div><h2 class="font-display text-2xl text-sage-deep">Need help understanding your symptoms?</h2><p class="mt-2 text-ink-soft">Start with a consultation and a clear, diagnosis-first plan.</p></div><a class="gradient-button shrink-0 rounded-full px-6 py-3 font-semibold text-white" href="https://wa.me/919833666967?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener">Schedule a Consultation</a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-line bg-white/45 px-5 py-12 sm:px-8">
+      <div class="mx-auto grid max-w-6xl gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div><a href="index.html#home"><img src="https://ik.imagekit.io/iuiy6mihw/Dr.sabnisLogo.png" alt="Dr. Shailaja Sabnis MD" class="h-20 w-auto max-w-[240px] object-contain" /></a><p class="mt-4 max-w-xs text-sm leading-relaxed text-ink-soft">Consultant Physician &amp; Rheumatologist in Mumbai, helping patients through clear diagnosis and individualized care.</p></div>
+        <div><h2 class="mb-5 border-b border-sage-deep/10 pb-2 text-xs font-bold uppercase tracking-[.2em] text-sage-deep">Quick Links</h2><div class="space-y-3 text-sm text-ink-soft"><a class="block hover:text-sage-deep" href="index.html#home">Home</a><a class="block hover:text-sage-deep" href="index.html#about">About</a><a class="block text-sage-deep" href="expertise.html">Expertise</a><a class="block hover:text-sage-deep" href="index.html#contact">Contact</a></div></div>
+        <div><h2 class="mb-5 border-b border-sage-deep/10 pb-2 text-xs font-bold uppercase tracking-[.2em] text-sage-deep">Areas</h2><div class="space-y-3 text-sm text-ink-soft"><a class="block hover:text-sage-deep" href="expertise.html">Rheumatoid Arthritis</a><a class="block hover:text-sage-deep" href="expertise.html">Lupus Care</a><a class="block hover:text-sage-deep" href="expertise.html">Osteoporosis Treatment</a><a class="block hover:text-sage-deep" href="expertise.html">Autoimmune Conditions</a></div></div>
+        <div><h2 class="mb-5 border-b border-sage-deep/10 pb-2 text-xs font-bold uppercase tracking-[.2em] text-sage-deep">Contact</h2><div class="space-y-3 text-sm text-ink-soft"><a class="block hover:text-sage-deep" href="mailto:drshailajasabnis@gmail.com">drshailajasabnis@gmail.com</a><a class="block hover:text-sage-deep" href="tel:+919821234075">+91 98212 34075</a><p>Andheri East, Mumbai</p></div></div>
+      </div>
+      <div class="mx-auto mt-10 flex max-w-6xl flex-col gap-2 border-t border-line/60 pt-5 text-xs text-ink-soft sm:flex-row sm:items-center sm:justify-between"><p>&copy; 2026 Dr. Shailaja Sabnis. All rights reserved.</p><p>Consultant Physician &amp; Rheumatologist · Mumbai, India</p></div>
+    </footer>
+
+    <script>
+      const menuButton = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuButton.addEventListener("click", () => {
+        const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+        menuButton.setAttribute("aria-expanded", String(!isOpen));
+        mobileMenu.classList.toggle("hidden", isOpen);
+      });
+      mobileMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => {
+        menuButton.setAttribute("aria-expanded", "false");
+        mobileMenu.classList.add("hidden");
+      }));
+
+      const expertiseTargets = [
+        "rheumatoid-arthritis.html", "sle-lupus.html", "ankylosing-spondylitis.html", "osteoarthritis.html",
+        "osteoporosis-bone-health.html", "gout-hyperuricemia.html", "psoriatic-arthritis.html", "vasculitis-apla.html",
+        "pregnancy-rheumatic-disease.html", "recurrent-pregnancy-loss.html", "thyroid-disorders.html", "general-internal-medicine.html"
+      ];
+      document.querySelectorAll(".expertise-card").forEach((card, index) => {
+        card.setAttribute("role", "link");
+        card.setAttribute("tabindex", "0");
+        const openDetails = () => { window.location.href = expertiseTargets[index]; };
+        card.addEventListener("click", openDetails);
+        card.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") { event.preventDefault(); openDetails(); }
+        });
+      });
+    </script>
+    <script src="foote.js"></script>
+  </body>
+</html>
