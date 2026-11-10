@@ -6,132 +6,764 @@
     <title>SLE (Lupus) | Dr. Shailaja Sabnis</title>
     <meta
       name="description"
-      content="Systemic lupus erythematosus diagnosis and care by Dr. Shailaja Sabnis in Mumbai."
+      content="Systemic lupus erythematosus care, flare management and organ protection by Dr. Shailaja Sabnis in Mumbai."
     />
-    <link rel="stylesheet" href="condition-page.css" />
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="Dr. Shailaja Sabnis" />
+    <meta
+      name="keywords"
+      content="rheumatologist Mumbai, Dr Shailaja Sabnis, autoimmune care, arthritis treatment, lupus, osteoporosis"
+    />
+    <meta property="og:title" content="SLE (Lupus) | Dr. Shailaja Sabnis" />
+    <meta
+      property="og:description"
+      content="Systemic lupus erythematosus care, flare management and organ protection by Dr. Shailaja Sabnis in Mumbai."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Karla:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/tailwind-config.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   </head>
-  <body>
-    <header class="site-header">
-      <nav>
-        <a href="index.html#home" class="logo"
-          ><img
+  <body class="bg-ivory text-ink">
+    <header
+      id="main-header"
+      class="sticky top-0 z-50 bg-ivory/90 backdrop-blur-md border-b border-line transition-all duration-300"
+    >
+      <nav
+        class="max-w-7xl mx-auto pl-0 pr-4 sm:px-6 md:px-8 py-1 md:py-2 flex items-center justify-between transition-all duration-300"
+      >
+        <a
+          href="/index.html#home"
+          class="inline-flex flex-shrink-0 items-center justify-start p-0 m-0"
+        >
+          <img
             src="https://ik.imagekit.io/iuiy6mihw/Dr.sabnisLogo.png"
             alt="Dr. Shailaja Sabnis MD"
-        /></a>
-        <div class="desktop-nav">
-          <a href="index.html#home">Home</a><a href="index.html#about">About</a
-          ><a href="expertise.html" class="active">Expertise</a
-          ><a href="index.html#contact">Contact</a>
+            class="h-24 sm:h-24 md:h-20 w-auto max-w-[calc(100vw-80px)] sm:max-w-[260px] md:max-w-[300px] object-contain block p-0 m-0"
+            width="300"
+            height="96"
+          />
+        </a>
+        <div
+          class="hidden md:flex items-center gap-6 lg:gap-8 text-base font-semibold text-ink-soft"
+        >
+          <a
+            class="nav-link hover:text-sage-deep transition-colors duration-200"
+            href="/index.html#home"
+            >Home</a
+          >
+          <a
+            class="nav-link hover:text-sage-deep transition-colors duration-200"
+            href="/index.html#about"
+            >About</a
+          >
+          <a
+            class="nav-link hover:text-sage-deep transition-colors duration-200 text-sage-deep"
+            href="/index.html#expertise"
+            aria-current="page"
+            >Services</a
+          >
+          <a
+            class="nav-link hover:text-sage-deep transition-colors duration-200"
+            href="/index.html#patient-science"
+            >Patient Science</a
+          >
+          <a
+            class="nav-link hover:text-sage-deep transition-colors duration-200"
+            href="/index.html#contact"
+            >Contact</a
+          >
         </div>
-        <a
-          class="button desktop-cta"
-          href="https://wa.me/919833666967?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation"
-          target="_blank"
-          rel="noopener"
-          >Book a Consultation</a
-        ><button
-          class="menu-button"
-          id="menu-button"
-          aria-label="Toggle navigation"
+        <div class="hidden md:block flex-shrink-0">
+          <a
+            class="gradient-button inline-flex items-center justify-center text-white text-base font-semibold px-7 py-3 rounded-full shadow-sm hover:shadow-md transition-all duration-300"
+            href="https://wa.me/919833666967?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation"
+            target="_blank"
+            rel="noopener"
+            >Book a Consultation</a
+          >
+        </div>
+        <button
+          id="mobile-menu-btn"
+          type="button"
+          class="md:hidden flex flex-col justify-center items-center w-11 h-11 rounded-lg text-sage-deep hover:bg-sage-deep/5 transition-colors focus:outline-none z-50"
+          aria-label="Toggle navigation menu"
           aria-expanded="false"
         >
-          <span></span><span></span><span></span>
+          <span
+            class="w-6 h-0.5 bg-sage-deep rounded-full transition-all duration-300"
+          ></span>
+          <span
+            class="w-6 h-0.5 bg-sage-deep rounded-full my-1.5 transition-all duration-300"
+          ></span>
+          <span
+            class="w-6 h-0.5 bg-sage-deep rounded-full transition-all duration-300"
+          ></span>
         </button>
       </nav>
-      <div class="mobile-nav" id="mobile-nav">
-        <a href="index.html#home">Home</a><a href="index.html#about">About</a
-        ><a href="expertise.html">Expertise</a
-        ><a href="index.html#contact">Contact</a
-        ><a
-          class="button"
-          href="https://wa.me/919833666967?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation"
-          target="_blank"
-          rel="noopener"
-          >Book a Consultation</a
-        >
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-ivory/95 backdrop-blur-xl border-b border-line px-6 py-5 transition-all duration-300 opacity-0 -translate-y-2"
+      >
+        <div class="flex flex-col gap-4 text-lg font-semibold text-ink-soft">
+          <a
+            class="mobile-nav-link hover:text-sage-deep transition-colors py-1.5"
+            href="/index.html#home"
+            >Home</a
+          >
+          <a
+            class="mobile-nav-link hover:text-sage-deep transition-colors py-1.5"
+            href="/index.html#about"
+            >About</a
+          >
+          <a
+            class="mobile-nav-link hover:text-sage-deep transition-colors py-1.5 text-sage-deep"
+            href="/index.html#expertise"
+            >Services</a
+          >
+          <a
+            class="mobile-nav-link hover:text-sage-deep transition-colors py-1.5"
+            href="/index.html#patient-science"
+            >Patient Science</a
+          >
+          <a
+            class="mobile-nav-link hover:text-sage-deep transition-colors py-1.5"
+            href="/index.html#contact"
+            >Contact</a
+          >
+          <div class="pt-3 border-t border-line/60 mt-1">
+            <a
+              class="mobile-nav-link block w-full text-center gradient-button text-white text-base font-semibold px-6 py-3 rounded-full shadow-sm"
+              href="https://wa.me/919833666967?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation"
+              target="_blank"
+              rel="noopener"
+              >Book a Consultation</a
+            >
+          </div>
+        </div>
       </div>
     </header>
+
     <main>
-      <section class="condition-hero">
-        <div>
-          <p class="eyebrow">02 / Autoimmune disease</p>
-          <h1>SLE (Lupus)</h1>
-          <p class="intro">
+      <section class="px-5 pt-14 pb-8 sm:px-8 sm:pt-20">
+        <div class="mx-auto max-w-6xl" data-aos="fade-up">
+          <p
+            class="eyebrow flex items-center font-mono text-xs uppercase tracking-[0.18em] text-sage font-medium mb-4"
+          >
+            02 / Autoimmune disease
+          </p>
+          <h1
+            class="font-display text-4xl sm:text-5xl md:text-6xl leading-tight text-sage-deep max-w-3xl"
+          >
+            SLE (Lupus)
+          </h1>
+          <p
+            class="mt-5 max-w-2xl text-base sm:text-lg leading-relaxed text-ink-soft"
+          >
             Systemic lupus erythematosus is an autoimmune condition that can
             affect different parts of the body. Care focuses on understanding
             the pattern of symptoms and protecting organ health.
           </p>
+          <div class="mt-7 flex flex-wrap gap-3">
+            <a
+              class="gradient-button inline-flex items-center justify-center text-white text-sm sm:text-base font-semibold px-6 py-3.5 rounded-full"
+              href="https://wa.me/919833666967?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation"
+              target="_blank"
+              rel="noopener"
+              >Discuss your symptoms</a
+            >
+            <a
+              class="inline-flex items-center justify-center border border-sage-deep/30 text-sage-deep text-sm sm:text-base font-semibold px-6 py-3.5 rounded-full hover:bg-sage-deep/5 transition"
+              href="/index.html#expertise"
+              >All services</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="px-5 pb-8 sm:px-8" data-aos="fade-up">
+        <div class="mx-auto max-w-6xl gradient-panel rounded-3xl p-6 sm:p-8">
+          <p
+            class="font-mono text-[11px] uppercase tracking-[0.18em] text-mauve mb-2"
+          >
+            Consultation focus
+          </p>
+          <p
+            class="font-display text-2xl sm:text-3xl text-sage-deep leading-snug max-w-3xl"
+          >
+            Flare management, organ review and long-term prevention.
+          </p>
+        </div>
+      </section>
+
+      <section class="px-5 py-10 sm:px-8 sm:py-14">
+        <div class="mx-auto max-w-6xl grid md:grid-cols-2 gap-5">
+          <article
+            class="premium-card rounded-3xl p-7 sm:p-8"
+            data-aos="fade-up"
+          >
+            <p
+              class="font-mono text-[11px] uppercase tracking-[0.18em] text-sage-deep mb-3"
+            >
+              What we look for
+            </p>
+            <h2
+              class="font-display text-2xl sm:text-3xl text-sage-deep leading-snug"
+            >
+              Symptoms can change over time.
+            </h2>
+            <p class="mt-4 text-ink-soft leading-relaxed">
+              Fatigue, joint pain, rashes, fever and other symptoms may have
+              several causes. A structured history, examination and appropriate
+              investigations help build a clear picture.
+            </p>
+          </article>
+          <article
+            class="premium-card rounded-3xl p-7 sm:p-8"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <p
+              class="font-mono text-[11px] uppercase tracking-[0.18em] text-sage-deep mb-3"
+            >
+              Care approach
+            </p>
+            <h2
+              class="font-display text-2xl sm:text-3xl text-sage-deep leading-snug"
+            >
+              Steady monitoring makes care safer.
+            </h2>
+            <p class="mt-4 text-ink-soft leading-relaxed">
+              Treatment is tailored to disease activity and the organs involved.
+              Medication review and regular monitoring help manage flares while
+              supporting everyday wellbeing.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="px-5 pb-12 sm:px-8 sm:pb-16">
+        <div class="mx-auto max-w-6xl" data-aos="fade-up">
+          <div class="premium-card rounded-3xl p-7 sm:p-9">
+            <p
+              class="font-mono text-[11px] uppercase tracking-[0.18em] text-sage-deep mb-3"
+            >
+              In clinic, we also review
+            </p>
+            <h2 class="font-display text-2xl sm:text-3xl text-sage-deep mb-5">
+              A clearer path from symptoms to plan.
+            </h2>
+            <ul class="space-y-3 text-sm sm:text-base max-w-3xl">
+              <li
+                class="check-item flex items-start gap-3 text-ink-soft leading-relaxed"
+              >
+                Multi-system symptom pattern review
+              </li>
+              <li
+                class="check-item flex items-start gap-3 text-ink-soft leading-relaxed"
+              >
+                Flare recognition and prevention planning
+              </li>
+              <li
+                class="check-item flex items-start gap-3 text-ink-soft leading-relaxed"
+              >
+                Medication safety and monitoring
+              </li>
+              <li
+                class="check-item flex items-start gap-3 text-ink-soft leading-relaxed"
+              >
+                Organ-focused follow-up
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-5 pb-12 sm:px-8 sm:pb-16" data-aos="fade-up">
+        <div
+          class="mx-auto max-w-6xl rounded-3xl border border-sage-deep/15 bg-sage-deep/5 p-7 sm:p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6"
+        >
+          <div>
+            <p
+              class="font-mono text-[11px] uppercase tracking-[0.18em] text-sage-deep mb-2"
+            >
+              Next step
+            </p>
+            <h2 class="font-display text-2xl sm:text-3xl text-sage-deep">
+              Get your symptoms connected into one clear plan.
+            </h2>
+            <p class="mt-3 text-ink-soft max-w-2xl">
+              Dr. Sabnis can help explain test results, treatment options and
+              the next step in your care.
+            </p>
+          </div>
           <a
-            class="button"
+            class="gradient-button shrink-0 inline-flex items-center justify-center text-white font-semibold px-6 py-3.5 rounded-full"
             href="https://wa.me/919833666967?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation"
             target="_blank"
             rel="noopener"
-            >Discuss your symptoms</a
-          >
-        </div>
-        <div class="hero-note">
-          <span>Consultation focus</span
-          ><strong
-            >Flare management, organ review and long-term prevention.</strong
+            >Book a Consultation</a
           >
         </div>
       </section>
-      <section class="content-grid">
-        <article>
-          <p class="eyebrow">What we look for</p>
-          <h2>Symptoms can change over time.</h2>
-          <p>
-            Fatigue, joint pain, rashes, fever and other symptoms may have
-            several causes. A structured history, examination and appropriate
-            investigations help build a clear picture.
-          </p>
-        </article>
-        <article>
-          <p class="eyebrow">Care approach</p>
-          <h2>Steady monitoring makes care safer.</h2>
-          <p>
-            Treatment is tailored to disease activity and the organs involved.
-            Medication review and regular monitoring help manage flares while
-            supporting everyday wellbeing.
-          </p>
-        </article>
-      </section>
-      <section class="next-step">
-        <p class="eyebrow">Next step</p>
-        <h2>Get your symptoms connected into one clear plan.</h2>
-        <p>
-          Dr. Sabnis can help explain test results, treatment options and the
-          next step in your care.
-        </p>
-        <a href="expertise.html">Back to all areas of expertise &rarr;</a>
+
+      <section class="px-5 pb-16 sm:px-8">
+        <div class="mx-auto max-w-6xl">
+          <div class="mb-7" data-aos="fade-up">
+            <p
+              class="font-mono text-[11px] uppercase tracking-[0.18em] text-sage-deep mb-2"
+            >
+              Continue exploring
+            </p>
+            <h2 class="font-display text-2xl sm:text-3xl text-sage-deep">
+              Related services
+            </h2>
+          </div>
+          <div class="grid sm:grid-cols-3 gap-4">
+            <a
+              href="/rheumatoid-arthritis.html"
+              class="premium-card rounded-2xl p-5 block hover:-translate-y-1 transition-transform duration-300"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <p
+                class="font-mono text-[11px] uppercase tracking-[0.16em] text-sage-deep mb-2"
+              >
+                Related service
+              </p>
+              <h3 class="font-display text-xl text-sage-deep">
+                Rheumatoid Arthritis
+              </h3>
+              <p class="mt-2 text-sm text-ink-soft">
+                Rheumatoid arthritis is an autoimmune condition in which the
+                immune system causes inflammation in the joints. …
+              </p>
+              <span
+                class="mt-4 inline-flex text-sm font-semibold text-sage-deep"
+                >Learn more &rarr;</span
+              > </a
+            ><a
+              href="/ankylosing-spondylitis.html"
+              class="premium-card rounded-2xl p-5 block hover:-translate-y-1 transition-transform duration-300"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <p
+                class="font-mono text-[11px] uppercase tracking-[0.16em] text-sage-deep mb-2"
+              >
+                Related service
+              </p>
+              <h3 class="font-display text-xl text-sage-deep">
+                Ankylosing Spondylitis
+              </h3>
+              <p class="mt-2 text-sm text-ink-soft">
+                Ankylosing spondylitis is a form of inflammatory arthritis that
+                mainly affects the spine and sacroiliac joints…
+              </p>
+              <span
+                class="mt-4 inline-flex text-sm font-semibold text-sage-deep"
+                >Learn more &rarr;</span
+              > </a
+            ><a
+              href="/osteoarthritis.html"
+              class="premium-card rounded-2xl p-5 block hover:-translate-y-1 transition-transform duration-300"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <p
+                class="font-mono text-[11px] uppercase tracking-[0.16em] text-sage-deep mb-2"
+              >
+                Related service
+              </p>
+              <h3 class="font-display text-xl text-sage-deep">
+                Osteoarthritis
+              </h3>
+              <p class="mt-2 text-sm text-ink-soft">
+                Osteoarthritis develops when joint cartilage wears down over
+                time. Thoughtful medical care can ease pain, supp…
+              </p>
+              <span
+                class="mt-4 inline-flex text-sm font-semibold text-sage-deep"
+                >Learn more &rarr;</span
+              >
+            </a>
+          </div>
+          <div class="mt-8" data-aos="fade-up">
+            <a
+              href="/index.html#expertise"
+              class="font-semibold text-sage-deep hover:underline"
+              >Back to all services &rarr;</a
+            >
+          </div>
+        </div>
       </section>
     </main>
-    <footer>
-      <div>
-        <a href="index.html#home"
-          ><img
-            src="https://ik.imagekit.io/iuiy6mihw/Dr.sabnisLogo.png"
-            alt="Dr. Shailaja Sabnis MD"
-        /></a>
-        <p>
-          Consultant Physician &amp; Rheumatologist in Mumbai, helping patients
-          through clear diagnosis and individualized care.
+
+    <footer
+      class="border-t border-line bg-gradient-to-b from-[#f7f3ec] via-[#faf7f2] to-[#f4efe7] backdrop-blur-md py-14 px-6 md:px-8"
+      data-aos="fade-up"
+      data-aos-duration="700"
+      data-aos-once="true"
+    >
+      <div
+        class="max-w-6xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-5 items-start"
+      >
+        <!-- Column 1: Brand -->
+        <div class="space-y-4">
+          <a
+            href="/index.html#home"
+            class="inline-block transition-transform duration-300 hover:scale-105"
+          >
+            <img
+              src="https://ik.imagekit.io/iuiy6mihw/Dr.sabnisLogo.png"
+              alt="Dr. Shailaja Sabnis MD"
+              class="h-20 w-auto max-w-[240px] object-contain block p-0 m-0"
+              width="240"
+              height="80"
+              loading="lazy"
+            />
+          </a>
+          <p class="text-sm leading-relaxed text-ink-soft">
+            Consultant Physician &amp; Rheumatologist in Mumbai, helping
+            patients with rheumatoid arthritis, lupus, osteoporosis, and
+            autoimmune conditions through clear diagnosis and individualized
+            care.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h4
+            class="text-xs uppercase tracking-[0.2em] text-sage-deep font-bold mb-5 border-b border-sage-deep/10 pb-2"
+          >
+            Quick Links
+          </h4>
+          <ul class="space-y-3 text-sm text-ink-soft">
+            <li>
+              <a
+                class="group flex items-center gap-2 hover:text-sage-deep transition-all duration-200"
+                href="/index.html#home"
+              >
+                <span
+                  class="text-xs text-sage-deep opacity-60 group-hover:translate-x-1 transition-transform"
+                  >&gt;</span
+                >
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="group flex items-center gap-2 hover:text-sage-deep transition-all duration-200"
+                href="/index.html#about"
+              >
+                <span
+                  class="text-xs text-sage-deep opacity-60 group-hover:translate-x-1 transition-transform"
+                  >&gt;</span
+                >
+                <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="group flex items-center gap-2 hover:text-sage-deep transition-all duration-200"
+                href="/index.html#expertise"
+              >
+                <span
+                  class="text-xs text-sage-deep opacity-60 group-hover:translate-x-1 transition-transform"
+                  >&gt;</span
+                >
+                <span>Services</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="group flex items-center gap-2 hover:text-sage-deep transition-all duration-200"
+                href="/index.html#patient-science"
+              >
+                <span
+                  class="text-xs text-sage-deep opacity-60 group-hover:translate-x-1 transition-transform"
+                  >&gt;</span
+                >
+                <span>Patient Science</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="group flex items-center gap-2 hover:text-sage-deep transition-all duration-200"
+                href="/index.html#contact"
+              >
+                <span
+                  class="text-xs text-sage-deep opacity-60 group-hover:translate-x-1 transition-transform"
+                  >&gt;</span
+                >
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Services (1-7) -->
+        <div>
+          <h4
+            class="text-xs uppercase tracking-[0.2em] text-sage-deep font-bold mb-5 border-b border-sage-deep/10 pb-2"
+          >
+            Services
+          </h4>
+          <ul class="space-y-3 text-sm text-ink-soft">
+            <li>
+              <a
+                href="/rheumatoid-arthritis.html"
+                class="group flex items-center gap-2 hover:text-sage-deep transition-all duration-200"
+                ><span
+                  class="group-hover:translate-x-1 transition-transform duration-200"
+                  >Rheumatoid Arthritis</span
+                ></a
+              >
+            </li>
+            <li>
+              <a
+                href="/sle-lupus.html"
+                class="group flex items-center gap-2 hover:text-sage-deep transition-all duration-200"
+                ><span
+                  class="group-hover:translate-x-1 transition-transform duration-200"
+                  >SLE (Lupus)</span
+                ></a
+              >
+            </li>
+            <li>
+              <a
+                href="/ankylosing-spondylitis.html"
+                class="group flex items-center gap-2 hover:text-sage-deep transition-all duration-200"
+                ><span
+                  class="group-hover:translate-x-1 transition-transform duration-200"
+                  >Ankylosing Spondylitis</span
+                ></a
+              >
+            </li>
+            <li>
+              <a
+                href="/osteoarthritis.html"
+                class="group flex items-center gap-2 hover:text-sage-deep transition-all duration-200"
+                ><span
+                  class="group-hover:translate-x-1 transition-transform duration-200"
+                  >Osteoarthritis</span
+                ></a
+              >
+            </li>
+            <li>
+              <a
+                href="/osteoporosis-bone-health.html"
+                class="group flex items-center gap-2 hover:text-sage-deep transition-all duration-200"
+                ><span
+                  class="group-hover:translate-x-1 transition-transform duration-200"
+                  >Osteoporosis &amp; Bone Health</span
+                ></a
+              >
+            </li>
+            <li>
+              <a
+                href="/gout-hyperuricemia.html"
+                class="group flex items-center gap-2 hover:text-sage-deep transition-all duration-200"
+                ><span
+                  class="group-hover:translate-x-1 transition-transform duration-200"
+                  >Gout &amp; Hyperuricemia</span
+                ></a
+              >
+            </li>
+            <li>
+              <a
+                href="/psoriatic-arthritis.html"
+                class="group flex items-center gap-2 hover:text-sage-deep transition-all duration-200"
+                ><span
+                  class="group-hover:translate-x-1 transition-transform duration-200"
+                  >Psoriatic Arthritis</span
+                ></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Services (8-12) -->
+        <div>
+          <h4
+            class="text-xs uppercase tracking-[0.2em] text-sage-deep font-bold mb-5 border-b border-sage-deep/10 pb-2"
+          >
+            Services
+          </h4>
+          <ul class="space-y-3 text-sm text-ink-soft">
+            <li>
+              <a
+                href="/vasculitis-apla.html"
+                class="group flex items-center gap-2 hover:text-sage-deep transition-all duration-200"
+                ><span
+                  class="group-hover:translate-x-1 transition-transform duration-200"
+                  >Vasculitis &amp; APLA</span
+                ></a
+              >
+            </li>
+            <li>
+              <a
+                href="/pregnancy-rheumatic-disease.html"
+                class="group flex items-center gap-2 hover:text-sage-deep transition-all duration-200"
+                ><span
+                  class="group-hover:translate-x-1 transition-transform duration-200"
+                  >Pregnancy &amp; Rheumatic Disease</span
+                ></a
+              >
+            </li>
+            <li>
+              <a
+                href="/recurrent-pregnancy-loss.html"
+                class="group flex items-center gap-2 hover:text-sage-deep transition-all duration-200"
+                ><span
+                  class="group-hover:translate-x-1 transition-transform duration-200"
+                  >Recurrent Pregnancy Loss</span
+                ></a
+              >
+            </li>
+            <li>
+              <a
+                href="/thyroid-disorders.html"
+                class="group flex items-center gap-2 hover:text-sage-deep transition-all duration-200"
+                ><span
+                  class="group-hover:translate-x-1 transition-transform duration-200"
+                  >Thyroid Disorders</span
+                ></a
+              >
+            </li>
+            <li>
+              <a
+                href="/general-internal-medicine.html"
+                class="group flex items-center gap-2 hover:text-sage-deep transition-all duration-200"
+                ><span
+                  class="group-hover:translate-x-1 transition-transform duration-200"
+                  >General Internal Medicine</span
+                ></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Contact -->
+        <div>
+          <h4
+            class="text-xs uppercase tracking-[0.2em] text-sage-deep font-bold mb-5 border-b border-sage-deep/10 pb-2"
+          >
+            Contact
+          </h4>
+          <ul class="space-y-3 text-sm text-ink-soft mb-6">
+            <li>
+              <a
+                href="mailto:drshailajasabnis@gmail.com"
+                class="hover:text-sage-deep transition-colors duration-200"
+                >drshailajasabnis@gmail.com</a
+              >
+            </li>
+            <li>
+              <a
+                href="tel:+919833666967"
+                class="hover:text-sage-deep transition-colors duration-200"
+                >+91 98336 66967</a
+              >
+            </li>
+            <li class="pt-1">Andheri East, Mumbai</li>
+          </ul>
+          <div class="flex items-center gap-3">
+            <a
+              href="mailto:drshailajasabnis@gmail.com"
+              title="Email"
+              aria-label="Email"
+              class="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-sage-deep border border-black/5 shadow-sm transition-all duration-300 hover:bg-sage-deep hover:text-white hover:-translate-y-1.5 hover:shadow-lg active:scale-95"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://wa.me/919833666967?text=Hello"
+              target="_blank"
+              rel="noopener"
+              title="WhatsApp"
+              aria-label="WhatsApp"
+              class="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-[#25D366] border border-black/5 shadow-sm transition-all duration-300 hover:bg-[#25D366] hover:text-white hover:-translate-y-1.5 hover:shadow-lg active:scale-95"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                />
+              </svg>
+            </a>
+            <a
+              href="tel:+919833666967"
+              title="Phone"
+              aria-label="Phone"
+              class="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-sage-deep border border-black/5 shadow-sm transition-all duration-300 hover:bg-sage-deep hover:text-white hover:-translate-y-1.5 hover:shadow-lg active:scale-95"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="max-w-6xl mx-auto mt-12 border-t border-line/60 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-ink-soft opacity-80"
+      >
+        <p>&copy; 2026 Dr. Shailaja Sabnis. All rights reserved.</p>
+        <p class="text-right">
+          Consultant Physician &amp; Rheumatologist · Mumbai, India
         </p>
       </div>
-      <div>
-        <h2>Quick Links</h2>
-        <a href="index.html#home">Home</a><a href="index.html#about">About</a
-        ><a href="expertise.html">Expertise</a
-        ><a href="index.html#contact">Contact</a>
-      </div>
-      <div>
-        <h2>Contact</h2>
-        <a href="mailto:drshailajasabnis@gmail.com"
-          >drshailajasabnis@gmail.com</a
-        ><a href="tel:+919833666967">+91 98336 66967</a>
-        <p>Andheri East, Mumbai</p>
-      </div>
     </footer>
-    <script src="condition-page.js"></script>
+
+    <a
+      href="https://wa.me/919833666967?text=Hello%2C%20I%27d%20like%20to%20book%20a%20consultation"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat on WhatsApp"
+      title="Chat on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path
+          d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+        />
+      </svg>
+    </a>
+      <script src="/main.js"></script>
   </body>
 </html>
